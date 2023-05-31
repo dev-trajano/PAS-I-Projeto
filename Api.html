@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="css/styleApi.css" />
+
+  <body>
+    <select id="Paises">
+      <!-- <option value="">Selecione o País</option> -->
+    </select>
+    <div id="InfoPais"></div>
+    <div id="container"></div>
+
+    <div>
+      <label>
+        <input
+          type="checkbox"
+          id="capital-checkbox"
+          onchange="toggleDetails('capital-checkbox')"
+        />
+        Capital
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          id="moeda-checkbox"
+          onchange="toggleDetails('moeda-checkbox')"
+        />
+        Moeda
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          id="regiao-checkbox"
+          onchange="toggleDetails('regiao-checkbox')"
+        />
+        Região
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          id="subregiao-checkbox"
+          onchange="toggleDetails('subregiao-checkbox')"
+        />
+        Sub-região
+      </label>
+      <label>
+        <input
+          type="checkbox"
+          id="idioma-checkbox"
+          onchange="toggleDetails('idioma-checkbox')"
+        />
+        Idioma
+      </label>
+      <button onclick="buscarPais()">Buscar Informações</button>
+    </div>
+    <script src="/js/Api.js"></script>
+  </body>
+</html>

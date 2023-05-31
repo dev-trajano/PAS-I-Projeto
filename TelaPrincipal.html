@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WIKI NATIONS</title>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/stylePrincipal.css " />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <img class="logo" src="/assets/fotos/logo.png" />
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="TelaLogin.html">Login</a></li>
+            <li><a class="title" href="TelaDados.html">Dados</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Inicio -->
+      <section class="section mundo" id="home">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Explore o mundo!</h2>
+            <p>
+              De A a Z, pesquise e descubra sobre a diversidade geográfica do
+              planeta com nosso guia completo de informações sobre todos os
+              países do globo.
+            </p>
+            <a href="TelaLogin.html">
+              <button>COMEÇAR AGORA!</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+      <!-- wiki -->
+      <div id="wiki">
+        <img class="wiki" src="/assets/fotos/Title.png" />
+      </div>
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div>
+            <h2 class="sobre">SOBRE <span style="color: #ffffff">NÓS</span></h2>
+          </div>
+          <span></span>
+          <div class="text">
+            <p>
+              A API Wiki NATIONS segue os princípios do estilo arquitetural
+              RESTful, o que significa que os usuários podem fazer solicitações
+              HTTP simples para acessar informações sobre países. A API oferece
+              vários endpoints, como
+              <span style="color: #19123c">
+                /all, /alpha/{code}, /name/{name} e /region/{region} </span
+              >, que permitem que os usuários acessem informações específicas
+              sobre países. Os dados fornecidos pela API Wiki NATIONS são
+              atualizados regularmente para garantir que as informações sejam
+              precisas e atualizadas. A API é fácil de usar e sua documentação
+              detalhada facilita a integração em aplicativos e sites.
+            </p>
+            <br />
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Ainda estamos em processo de construção!</h2>
+            <p>
+              Então, no caso de alguma dúvida ou crítica construtiva, fale
+              diretamente conosco!
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5583986581168&text=Oi! Gostaria de agendar um horário"
+              class="button"
+              target="_blank"
+              ><i class="icon-icon-whatsapp"></i> Entrar em contato</a
+            >
+          </div>
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> 11 99845-6754</li>
+              <li>
+                <i class="icon-map-pin"></i> v. Santa Elisabete, 160 - Rio
+                Tinto, PB
+              </li>
+              <li><i class="icon-mail"></i> contato@wikinations.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="divider-1"></div>
+    </main>
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <p>©2022 Wiki Nations.</p>
+          <img class="logo" src="/assets/fotos/logo.png" />
+          <p>Todos os direitos reservados.</p>
+        </div>
+        <div class="grid brand">
+          <p>Siga-nos nas redes sociais</p>
+          <div class="social">
+            <a href="https://instagram.com" target="_blank">
+              <i class="icon-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank">
+              <i class="icon-facebook"></i
+            ></a>
+            <a href="https://youtube.com" target="_blank"
+              ><i class="icon-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/TelaPrincipal.js"></script>
+  </body>
+</html>

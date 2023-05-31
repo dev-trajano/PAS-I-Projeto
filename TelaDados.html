@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/styleDados.css " />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <img class="logo" src="/assets/fotos/Logo_branco.png" />
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li>
+              <a style="color: #f178b6" href="#home">SEUS DADOS PESSOAIS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="forms" class="section">
+      <form id="myForm" class="">
+        <h2 class="title">SEUS DADOS PESSOAIS</h2>
+        <label for="nome">Nome:</label>
+        <input class="input" id="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" class="input" id="email" required />
+
+        <label for="dataNascimento"
+          >Data de Nascimento (maior que 16 anos):</label
+        >
+        <input type="date" class="input" id="dataNascimento" required />
+
+        <label for="cpf">CPF:</label>
+        <input class="input" id="cpf" required />
+
+        <label for="telefone">Telefone:</label>
+        <input class="input" id="telefone" required />
+
+        <label for="cep">CEP:</label>
+        <input class="input" id="cep" required />
+
+        <label for="rua">Rua:</label>
+        <input class="input" id="rua" required />
+
+        <label for="bairro">Bairro:</label>
+        <input class="input" id="bairro" required />
+
+        <label for="cidade">Cidade:</label>
+        <input class="input" id="cidade" required />
+
+        <label for="estado">Estado:</label>
+        <input class="input" id="estado" required />
+
+        <label for="complemento">Complemento:</label>
+        <input class="input" id="complemento" />
+
+        <button class="button" type="submit">Enviar</button>
+      </form>
+    </section>
+    <div class="marg">
+      <img src="assets/fotos/Footer.svg" />
+    </div>
+    <script src="./js/validarDados.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
