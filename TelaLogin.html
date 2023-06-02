@@ -8,7 +8,7 @@
 
     <!-- Icones -->
     <link rel="stylesheet" href="assets/fonts/style.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- STYLES -->
     <link rel="stylesheet" href="css/styleLogin.css" />
   </head>
@@ -24,42 +24,54 @@
         </div>
       </nav>
     </header>
+    <div class="divSuper">
 
-    <section id="forms" class="section">
-      <div class="divContainer">
-          <form
-            action="/"
-            class="formulario"
-            method="POST"
-            onsubmit="salvarUsuario(event)">
-
-
-            <div>
-            <h2 class="title">Login</h2>
-
-            <div class="subLogin">
-              - Ainda não possui conta? <a href="TelaCadastro.html" style="color:#f178b6;"><b>Cadastre-se</b></a> -
-            </div>
-
-            <div id="campos">
-              <div id="campoUsuario">
-                <label class="input-label">Usuário</label>
-                <input class="input validar nome" id="usuarioInput" />
-              </div>
-              <div id="campoSenha">
-                <label class="input-label">Senha</label>
-                <input type="password" class="input validar" id="senhaInput" />
-              </div>
-              <button class="button" id="btn" type="submit">Confirmar</button>
-            </div>
-            </div>
-          </form>
+      <div id="imgCentral">
+        <img src="assets/fotos/4781948.jpg">
       </div>
-    </section>
+
+      <section id="forms" class="section">
+        <div class="divContainer">
+            <form
+              action="/"
+              class="formulario"
+              method="POST"
+              onsubmit="salvarUsuario(event)">
+
+
+              <div>
+              <h2 class="title">Entre na sua conta.</h2>
+
+              <div class="subLogin">
+                - Ainda não possui conta? <a href="TelaCadastro.html" style="color:#f178b6;"><b>Cadastre-se</b></a> -
+              </div>
+
+              <div id="campos">
+                <div id="campoUsuario">
+                  <label class="input-label">Usuário:</label>
+                  <input class="input validar nome" id="usuarioInput" />
+                </div>
+                <div id="campoSenha">
+                  <label class="input-label">Senha:</label>
+                  
+                  <div class="divSenha">
+                    <input type="password" class="validar" id="senhaInput" />
+                    <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+                  </div>
+                
+                </div>
+                <button class="button" id="btn" type="submit">Confirmar</button>
+              </div>
+              </div>
+            </form>
+        </div>
+      </section>
+    </div>
     <div>
       <img src="assets/fotos/Footer.svg" />
     </div>
   </body>
   <script src="js/TelaLogin.js"></script>
+  
   <!-- scrollreveal -->
 </html>

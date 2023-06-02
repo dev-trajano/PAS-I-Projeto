@@ -46,7 +46,7 @@ body {
   color: var(--color-azul-acinzentado);
   background: var(--colo-branco);
   -webkit-font-smoothing: antialiased;
-  background-color: #fafafa;
+  background-color: white;
   font-family: 'Poppins';
 }
 
@@ -96,13 +96,26 @@ body {
 }
 /*====  FORMS ============================ */
 
+.divSuper{
+  display: flex;
+  width: 200px;
+}
+
+.divSuper img{
+  width: 600px;
+  margin-left: 100px;
+  position: absolute;
+  margin-top: 115px;
+  z-index: -1;
+}
+
 #forms {
   width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 90vh;
-  margin-left: 24rem;
+  margin-left: 45rem;
   margin-right: 24rem;
 }
 
@@ -112,7 +125,7 @@ body {
   border-radius: 0.5rem;
   margin-bottom: 15px;
   margin-top: 100px;
-  box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.2);
 }
 #forms .title{
   margin-top: 5rem;
@@ -183,6 +196,42 @@ textarea:focus, input:focus, select:focus {
   outline: 0;
 } 
 
+#campoSenha {
+  position: relative;
+}
+
+.divSenha{
+  position: relative;
+}
+
+.divSenha input{
+  width: 28rem;
+  height: 3rem;
+  border: 0.0625rem solid #8186C0;
+  border-radius: 0.5rem;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  color: #432D9C;
+}
+
+.divSenha i{
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 18%;
+  margin-top: 3px;
+}
+
+.divSenha i:hover{
+  color: #5E2993;
+  transition: 0.3s;
+}
+
+.divSenha img{
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+}
 
 .button {
   background: var(--color-rosa-claro);
@@ -207,7 +256,7 @@ textarea:focus, input:focus, select:focus {
 }
 
 .button:hover{
-  background-color:;
+  background-color: #f78ac2;
 }
 
 

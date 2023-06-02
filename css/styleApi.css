@@ -55,37 +55,7 @@ nav {
   width: 100%;
 }
 
-nav ul li {
-  text-align: center;
-  font-family:'Poppins';
-}
 
-nav ul li a {
-  transition: color 0.2s;
-  position: relative;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-  color: var(--color-roxo-medio);
-}
-
-nav ul li a::after {
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: var(--color-roxo-medio);
-
-  position: absolute;
-  left: 0;
-  bottom: -1.5rem;
-  transition: width 0.2s;
-}
-
-nav ul li a:hover::after,
-nav ul li a.active::after {
-  width: 100%;
-}
 
 nav .menu {
   opacity: 0;
@@ -121,15 +91,15 @@ nav .menu ul {
 
 .grid .dadosUser{
   display: flex;
+  align-items: center;
   color: #5E2993;
   cursor: pointer;
 }
 
 .grid .dadosUser:hover{
-  width: 120%;
-  height: 120%;
-  padding-left: 8px;
-  padding-top: 8px;
+  width: 140%;
+  height: 100%;
+  padding-left: 20%;
   transition: 0.3s;
 
   background-color: #f178b6;
@@ -140,8 +110,9 @@ nav .menu ul {
   border-radius: 0.5rem;
 }
 
-.grid .dadosUser img{
-  margin-left: 5px;
+.grid .dadosUser i{
+  font-size: 30px;
+  margin-left: 15px;
 }
 
 #header {
@@ -159,6 +130,11 @@ nav .menu ul {
 
 /*====  PAISES  ============================ */
 
+select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+} 
+
 .paises{
 
   width: 22.2222rem;
@@ -166,6 +142,7 @@ nav .menu ul {
   border: 0.0625rem solid #8186C0;
   border-radius: 0.5rem;
   margin-top: 8rem;
+  color: #432D9C;
 
 }
 .title{
@@ -185,10 +162,14 @@ nav .menu ul {
 .imgPais{
   width: 400px;
   height: 240px;
+  border-radius: 5px;
 }
+
+
 .input {
   padding-top: 1.4rem;
   padding-bottom: 4rem;
+  color: #5E2993;
 
 }
 .lab{
@@ -204,11 +185,48 @@ nav .menu ul {
   padding: 0 5rem;
   border: 0.0625rem;
   border-radius: 0.5rem;
-
+  cursor: pointer;
   font: 500 1rem var(--body-font);
   transition: background 0.3s;
   margin-bottom: 7.7rem;
 
+}
+
+.button:hover{
+  background-color: #ec6daf;
+}
+
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #432D9C;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  background-color: #5E2993;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 5px;
+  left: 9px;
 }
 
 /*====  FOOTER ============================ */
