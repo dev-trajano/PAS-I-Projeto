@@ -289,14 +289,14 @@ nav.show div.icon-close {
 
   font-family: 'Poppins';
   cursor: pointer;
-  color: rgb(229, 204, 239);
+  color: #e5ccef;
   font-size: 32px;
   font-weight: 600;
 }
 
 #home button:hover{
-  background-color: var(--color-rosa);
-  color: #121133;
+  background-color: #512081;
+  color: #d18cee;
   -webkit-box-shadow: 0 1px 10px 1px rgb(183, 92, 219);
   -moz-box-shadow: 0 1px 10px 1px rgb(183, 92, 219);
   -o-box-shadow: 0 1px 10px 1px rgb(183, 92, 219);
@@ -330,7 +330,7 @@ nav.show div.icon-close {
 /*====  Wiki ============================ */
 
 #wiki{
-  height: 100px;
+  height: 97px;
 }
 
 /*====  SOBRE ============================ */

@@ -15,35 +15,45 @@
   <body>
     <header id="header">
       <nav class="container">
-        <img class="logo" src="/assets/fotos/Logo_branco.png" />
+        <img class="logo" src="/assets/fotos/Logo.svg" />
         <!-- menu -->
         <div class="menu">
           <ul class="grid">
-            <li><a style="color: #f178b6" class="active" href="#">Login</a></li>
+            <li><a style="color: #f178b6" class="active" href="TelaPrincipal.html">Início</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <section id="forms" class="section">
-      <div>
-        <form
-          action="/"
-          class="formulario"
-          method="POST"
-          onsubmit="salvarUsuario(event)"
-        >
-          <h2 class="title">Login</h2>
-          <div>
-            <label class="input-label">Usuário</label>
-            <input class="input validar nome" id="usuarioInput" />
-          </div>
-          <div>
-            <label class="input-label">Senha</label>
-            <input type="password" class="input validar" id="senhaInput" />
-          </div>
-          <button class="button" id="btn" type="submit">Confirmar</button>
-        </form>
+      <div class="divContainer">
+          <form
+            action="/"
+            class="formulario"
+            method="POST"
+            onsubmit="salvarUsuario(event)">
+
+
+            <div>
+            <h2 class="title">Login</h2>
+
+            <div class="subLogin">
+              - Ainda não possui conta? <a href="TelaCadastro.html" style="color:#f178b6;"><b>Cadastre-se</b></a> -
+            </div>
+
+            <div id="campos">
+              <div id="campoUsuario">
+                <label class="input-label">Usuário</label>
+                <input class="input validar nome" id="usuarioInput" />
+              </div>
+              <div id="campoSenha">
+                <label class="input-label">Senha</label>
+                <input type="password" class="input validar" id="senhaInput" />
+              </div>
+              <button class="button" id="btn" type="submit">Confirmar</button>
+            </div>
+            </div>
+          </form>
       </div>
     </section>
     <div>

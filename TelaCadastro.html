@@ -15,11 +15,13 @@
   <body>
     <header id="header">
       <nav class="container">
-        <img class="logo" src="/assets/fotos/Logo_branco.png" />
+        <a href="TelaPrincipal.html">
+          <img class="logo" src="/assets/fotos/Logo.svg" />
+        </a>
         <!-- menu -->
         <div class="menu">
           <ul class="grid">
-            <li><a style="color: #f178b6" href="#home">Cadatrar Usuário</a></li>
+            <li><a style="color: #f178b6" href="TelaPrincipal.html">Início</a></li>
           </ul>
         </div>
       </nav>
@@ -29,24 +31,29 @@
       <div>
         <form action="/" class="formulario" method="POST">
           <h2 class="title">CADASTRAR USUÁRIO</h2>
-          <div>
-            <label class="input-label">Nome</label>
-            <input id="usuarioInput" class="input validar nome" />
+          <div class="subLogin">
+            - Já possui conta? Faça o <a href="TelaLogin.html" style="color:#f178b6;"><b>login</b></a> -
+          </div>
+          <div class="divNomes">
+            <div id="nomePrincipal">
+              <label class="input-label">Nome</label>
+              <input id="usuarioInput" class="validar nome" />
+            </div>
+            <div id="sobreNome">
+              <label class="input-label">Sobrenome</label>
+              <input id="inputSobreNome" class="validar" />
+            </div>
           </div>
           <div>
-            <label class="input-label">Sobrenome</label>
+            <label class="input-label">Email</label>
             <input class="input validar" />
           </div>
           <div>
-            <label class="input-label">Usuário</label>
-            <input class="input validar" />
-          </div>
-          <div>
-            <label class="input-label senha">Senha:</label>
+            <label class="input-label senha">Senha</label>
             <input id="senhaInput" class="input validar" type="password" />
           </div>
           <div>
-            <label class="input-label repeatSenha">Repetir senha:</label>
+            <label class="input-label repeatSenha">Repetir senha</label>
             <input
               id="repetirSenhaInput"
               class="input validar"
@@ -57,7 +64,7 @@
         </form>
       </div>
     </section>
-    <div>
+    <div class="footer">
       <img src="assets/fotos/Footer.svg" />
     </div>
   </body>

@@ -16,12 +16,14 @@
   <body>
     <header id="header">
       <nav class="container">
-        <img class="logo" src="/assets/fotos/Logo_branco.png" />
+        <a href="TelaPrincipal.html">
+          <img class="logo" src="/assets/fotos/Logo.svg" />
+        </a>
         <!-- menu -->
         <div class="menu">
           <ul class="grid">
             <li>
-              <a style="color: #f178b6" href="#home">SEUS DADOS PESSOAIS</a>
+              <a style="color: #f178b6" href="TelaApi.html">Voltar</a>
             </li>
           </ul>
         </div>
@@ -29,45 +31,56 @@
     </header>
 
     <section id="forms" class="section">
-      <form id="myForm" class="">
-        <h2 class="title">SEUS DADOS PESSOAIS</h2>
-        <label for="nome">Nome:</label>
-        <input class="input" id="nome" required />
+      <form id="" class="">
+        <h2 class="title">Dados Pessoais</h2>
 
-        <label for="email">E-mail:</label>
-        <input type="email" class="input" id="email" required />
+        <div class="dadosUsuario">
+          <div class="divEsquerda">
+            <label for="nome">Nome completo:</label>
+            <input class="input" id="nome" required />
 
-        <label for="dataNascimento"
-          >Data de Nascimento (maior que 16 anos):</label
-        >
-        <input type="date" class="input" id="dataNascimento" required />
+            <label for="email">E-mail:</label>
+            <input type="email" class="input" id="email" required />
 
-        <label for="cpf">CPF:</label>
-        <input class="input" id="cpf" required />
+            <label for="telefone">Usuário:</label>
+            <input class="input" id="usuario" required />
 
-        <label for="telefone">Telefone:</label>
-        <input class="input" id="telefone" required />
+            <label for="dataNascimento"
+              >Data de Nascimento:</label
+            >
+            <input type="date" class="input" id="dataNascimento" required />
 
-        <label for="cep">CEP:</label>
-        <input class="input" id="cep" required />
+            <label for="cpf">CPF:</label>
+            <input class="input" id="cpf" required />
 
-        <label for="rua">Rua:</label>
-        <input class="input" id="rua" required />
+            <label for="telefone">Telefone:</label>
+            <input class="input" id="telefone" required />
+          </div>
 
-        <label for="bairro">Bairro:</label>
-        <input class="input" id="bairro" required />
+          <div class="divDireita">
+            <label for="cep">CEP:</label>
+            <input class="input" id="cep" required />
 
-        <label for="cidade">Cidade:</label>
-        <input class="input" id="cidade" required />
+            <label for="rua">Rua:</label>
+            <input class="input" id="rua" required />
 
-        <label for="estado">Estado:</label>
-        <input class="input" id="estado" required />
+            <label for="bairro">Bairro:</label>
+            <input class="input" id="bairro" required />
 
-        <label for="complemento">Complemento:</label>
-        <input class="input" id="complemento" />
+            <label for="cidade">Cidade:</label>
+            <input class="input" id="cidade" required />
 
-        <button class="button" type="submit">Enviar</button>
-      </form>
+            <label for="estado">Estado:</label>
+            <input class="input" id="estado" required />
+
+            <label for="complemento">Complemento:</label>
+            <input class="input" id="complemento" />
+          </div>
+        </div>
+        <div class="botao">
+          <button class="button" type="submit">Salvar</button>
+        </div>
+        </form>
     </section>
     <div class="marg">
       <img src="assets/fotos/Footer.svg" />

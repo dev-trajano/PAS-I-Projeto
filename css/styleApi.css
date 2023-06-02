@@ -119,6 +119,31 @@ nav .menu ul {
   gap: 1rem;
 }
 
+.grid .dadosUser{
+  display: flex;
+  color: #5E2993;
+  cursor: pointer;
+}
+
+.grid .dadosUser:hover{
+  width: 120%;
+  height: 120%;
+  padding-left: 8px;
+  padding-top: 8px;
+  transition: 0.3s;
+
+  background-color: #f178b6;
+  color: white;
+
+  cursor: pointer;
+  border: 0.0625rem;
+  border-radius: 0.5rem;
+}
+
+.grid .dadosUser img{
+  margin-left: 5px;
+}
+
 #header {
   border-bottom: 1px solid #432D9C;
   margin-bottom: 2rem;
@@ -190,7 +215,6 @@ nav .menu ul {
 footer {
   background: var(--color-roxo-medio);
   position:static ;
-  bottom: 0;
   width: 100%;
   padding: 2.2rem;
 }
