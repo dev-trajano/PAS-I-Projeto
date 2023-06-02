@@ -26,15 +26,6 @@ const getPais = async () => {
       if (pais) {
         const infoPais = document.querySelector("#InfoPais");
         infoPais.innerHTML = "";
-
-        const h1 = document.createElement("h1");
-        h1.textContent = pais.name.common;
-        infoPais.appendChild(h1);
-
-        const img = document.createElement("img");
-        img.src = pais.flags.svg;
-        img.alt = `Bandeira do ${pais.name.common}`;
-        infoPais.appendChild(img);
       }
     });
   } catch (error) {
@@ -69,16 +60,24 @@ function buscarPais() {
 
         const h1 = document.createElement("h1");
         h1.textContent = paises[0].name.common;
+        h1.classList.add("title");
         infoPais.appendChild(h1);
+
+        const div = document.createElement("div");
+        div.classList.add("imgContainer");
 
         const img = document.createElement("img");
         img.src = paises[0].flags.svg;
         img.alt = `Bandeira do ${paises[0].name.common}`;
-        infoPais.appendChild(img);
+        img.classList.add("imgPais");
+
+        div.appendChild(img);
+        infoPais.appendChild(div);
 
         if (document.getElementById("capital-checkbox").checked) {
           const capital = document.createElement("p");
           capital.textContent = `Capital: ${paises[0].capital}`;
+          capital.classList.add("para");
           infoPais.appendChild(capital);
         }
 
@@ -88,18 +87,21 @@ function buscarPais() {
             paises[0].currencies[Object.keys(paises[0].currencies)[0]];
           const { name, symbol } = currency;
           moeda.textContent = `Moeda: ${name} (${symbol})`;
+          moeda.classList.add("para");
           infoPais.appendChild(moeda);
         }
 
         if (document.getElementById("regiao-checkbox").checked) {
           const regiao = document.createElement("p");
           regiao.textContent = `Região: ${paises[0].region}`;
+          regiao.classList.add("para");
           infoPais.appendChild(regiao);
         }
 
         if (document.getElementById("subregiao-checkbox").checked) {
           const subregiao = document.createElement("p");
           subregiao.textContent = `Sub-região: ${paises[0].subregion}`;
+          subregiao.classList.add("para");
           infoPais.appendChild(subregiao);
         }
 
@@ -108,6 +110,7 @@ function buscarPais() {
           idioma.textContent = `Idioma: ${Object.values(
             paises[0].languages
           ).join(", ")}`;
+          idioma.classList.add("para");
           infoPais.appendChild(idioma);
         }
 
@@ -116,6 +119,7 @@ function buscarPais() {
           fronteiras.textContent = `Fronteiras: ${paises[0].borders.join(
             ", "
           )}`;
+          fronteiras.classList.add("para");
           infoPais.appendChild(fronteiras);
         }
       })

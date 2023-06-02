@@ -1,38 +1,256 @@
-#select-country {
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
 }
 
-button {
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-#checkboxes-container {
-  margin-top: 1rem;
+ul {
+  list-style: none;
 }
 
-label {
-  font-size: 1.2rem;
-  margin-left: 0.5rem;
+a {
+  text-decoration: none;
 }
-input[type="checkbox"] {
-  margin-right: 0.5rem;
+
+
+/*====  VARIABLES ============================ */
+
+:root {
+  --header-height: 4.5rem;
+  --color-preto: #000000;
+  --color-azul-acinzentado: #8186C0;
+  --color-roxo-medio: #5E2993;
+  --color-rosa-claro: #F178B6;
+  --color-rosa-choque: #B75CDB;
+  --colo-branco: #ffffff;
+  --color-roxo-escuro: #432D9C;
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
 }
-.country-info {
-  margin-top: 1rem;
-  font-size: 1.2rem;
+/*====  LOGO ============================ */
+.logo {
+  font: 700 1.31rem var(--title-font);
+  color: var(--color-preto);
 }
-.country-info {
-  margin-top: 1rem;
-  font-size: 1.2rem;
+
+#header .logo {
+  width: 240px;
+  font-family: 'Poppins';
+
 }
-.country-info p {
-  margin: 0.5rem 0;
+
+.divider-1 {
+  height: 1px;
+  background: var(--color-azul-acinzentado)
+}
+
+/*====  NAVIGATION ============================ */
+nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav ul li {
+  text-align: center;
+  font-family:'Poppins';
+}
+
+nav ul li a {
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--color-roxo-medio);
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--color-roxo-medio);
+
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+  transition: width 0.2s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
+}
+
+nav .menu ul {
+  display: none;
+}
+.container {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* navigation */
+nav .menu {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+nav .menu ul {
+  display: flex;
+  gap: 2rem;
+}
+
+/*====  LAYOUT ============================ */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+#header {
+  border-bottom: 1px solid #432D9C;
+  margin-bottom: 2rem;
+  display: flex;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+/*====  PAISES  ============================ */
+
+.paises{
+
+  width: 22.2222rem;
+  height: 2.7778rem;
+  border: 0.0625rem solid #8186C0;
+  border-radius: 0.5rem;
+  margin-top: 8rem;
+
+}
+.title{
+  color: #5E2993;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+
+}
+.para{
+  padding-bottom: 0.9rem;
+  color: #5E2993;
+
+}
+.imgContainer{
+  float: right;
+}
+.imgPais{
+  width: 400px;
+  height: 240px;
+}
+.input {
+  padding-top: 1.4rem;
+  padding-bottom: 4rem;
+
+}
+.lab{
+  padding-right: 1rem;
+
+
+}
+
+.button {
+  background: var(--color-rosa-claro);
+  color: var(--colo-branco);
+
+  height: 3rem;
+  padding: 0 5rem;
+  border: 0.0625rem;
+  border-radius: 0.5rem;
+
+  font: 500 1rem var(--body-font);
+  transition: background 0.3s;
+
+}
+
+/*====  FOOTER ============================ */
+footer {
+  background: var(--color-roxo-medio);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+footer p{
+  margin-bottom: 0px;
+  color: #fafafa;
+}
+
+footer.section {
+  padding: 4rem 0;
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+
+}
+
+footer .brand p {
+  color: var(--colo-branco);
+  margin-bottom:1rem
+
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--colo-branco);
+}
+
+.social{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .social a {
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+}
+
+
+
+/*========= MEDIA QUERIES =========*/
+/* extra large devices: 1200 > */
+@media (min-width: 1200px) {
+  /* reusable classes */
+  .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

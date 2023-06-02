@@ -7,57 +7,103 @@
     <title>Document</title>
   </head>
   <link rel="stylesheet" href="css/styleApi.css" />
+  <link rel="stylesheet" href="assets/fonts/style.css" />
 
   <body>
-    <select id="Paises">
-      <!-- <option value="">Selecione o País</option> -->
-    </select>
-    <div id="InfoPais"></div>
-    <div id="container"></div>
-
-    <div>
-      <label>
-        <input
-          type="checkbox"
-          id="capital-checkbox"
-          onchange="toggleDetails('capital-checkbox')"
-        />
-        Capital
-      </label>
-      <label>
-        <input
-          type="checkbox"
-          id="moeda-checkbox"
-          onchange="toggleDetails('moeda-checkbox')"
-        />
-        Moeda
-      </label>
-      <label>
-        <input
-          type="checkbox"
-          id="regiao-checkbox"
-          onchange="toggleDetails('regiao-checkbox')"
-        />
-        Região
-      </label>
-      <label>
-        <input
-          type="checkbox"
-          id="subregiao-checkbox"
-          onchange="toggleDetails('subregiao-checkbox')"
-        />
-        Sub-região
-      </label>
-      <label>
-        <input
-          type="checkbox"
-          id="idioma-checkbox"
-          onchange="toggleDetails('idioma-checkbox')"
-        />
-        Idioma
-      </label>
-      <button onclick="buscarPais()">Buscar Informações</button>
+    <header id="header">
+      <nav class="container">
+        <img class="logo" src="/assets/fotos/Logo_branco.png" />
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li>
+              <a style="color: #f178b6" href="#home" class="active"
+                >Consultar Países</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+      <select id="Paises" class="paises">
+        <option value="">Selecione o País</option>
+      </select>
+    </section>
+    <section>
+      <div id="InfoPais" class="container nomePais"></div>
+    </section>
+    <section class="">
+      <div class="input container">
+        <label class="lab">
+          <input
+            type="checkbox"
+            id="capital-checkbox"
+            onchange="toggleDetails('capital-checkbox')"
+          />
+          Capital
+        </label>
+        <label class="lab">
+          <input
+            class="input"
+            type="checkbox"
+            id="moeda-checkbox"
+            onchange="toggleDetails('moeda-checkbox')"
+          />
+          Moeda
+        </label>
+        <label class="lab">
+          <input
+            type="checkbox"
+            id="regiao-checkbox"
+            onchange="toggleDetails('regiao-checkbox')"
+          />
+          Região
+        </label>
+        <label class="lab">
+          <input
+            type="checkbox"
+            id="subregiao-checkbox"
+            onchange="toggleDetails('subregiao-checkbox')"
+          />
+          Sub-região
+        </label>
+        <label class="lab">
+          <input
+            type="checkbox"
+            id="idioma-checkbox"
+            onchange="toggleDetails('idioma-checkbox')"
+          />
+          Idioma
+        </label>
+      </div>
+    </section>
+    <div class="container">
+      <button class="button" onclick="buscarPais()">Buscar Informações</button>
     </div>
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <p>©2022 Wiki Nations.</p>
+          <img class="logo" src="/assets/fotos/logo.png" />
+          <p>Todos os direitos reservados.</p>
+        </div>
+        <div class="grid brand">
+          <p>Siga-nos nas redes sociais</p>
+          <div class="social">
+            <a href="https://instagram.com" target="_blank">
+              <i class="icon-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank">
+              <i class="icon-facebook"></i
+            ></a>
+            <a href="https://youtube.com" target="_blank"
+              ><i class="icon-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="/js/Api.js"></script>
   </body>
 </html>
