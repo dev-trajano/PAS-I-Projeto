@@ -57,7 +57,7 @@ $(document).ready(function () {
 
     // Exibir mensagem e redirecionar para outra página
     alert("Formulário enviado com sucesso!");
-    window.location.href = "Api.html";
+    window.location.href = "TelaApi.html";
   });
 
   $("#cep").blur(function () {

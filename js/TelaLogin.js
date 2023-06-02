@@ -13,5 +13,5 @@ function salvarUsuario(event) {
   }
 
   document.cookie = "usuario=" + encodeURIComponent(usuario);
-  window.location.href = "Api.html";
+  window.location.href = "TelaApi.html";
 }
