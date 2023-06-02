@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/styleLogin.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <img class="logo" src="/assets/fotos/Logo_branco.png" />
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a style="color: #f178b6" href="#home">Cadatrar Usuário</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="forms" class="section">
+      <div>
+        <form action="/" class="formulario" method="POST">
+          <h2 class="title">CADASTRAR USUÁRIO</h2>
+          <div>
+            <label class="input-label">Nome</label>
+            <input id="usuarioInput" class="input validar nome" />
+          </div>
+          <div>
+            <label class="input-label">Sobrenome</label>
+            <input class="input validar" />
+          </div>
+          <div>
+            <label class="input-label">Usuário</label>
+            <input class="input validar" />
+          </div>
+          <div>
+            <label class="input-label senha">Senha:</label>
+            <input id="senhaInput" class="input validar" type="password" />
+          </div>
+          <div>
+            <label class="input-label repeatSenha">Repetir senha:</label>
+            <input
+              id="repetirSenhaInput"
+              class="input validar"
+              type="password"
+            />
+          </div>
+          <button class="button" id="btn" type="submit">Confirmar</button>
+        </form>
+      </div>
+    </section>
+    <div>
+      <img src="assets/fotos/Footer.svg" />
+    </div>
+  </body>
+  <script src="js/TelaCadastro.js"></script>
+  <!-- scrollreveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/TelaPrincipal.js"></script>
+</html>

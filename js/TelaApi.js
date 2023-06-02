@@ -128,3 +128,19 @@ function buscarPais() {
       });
   }
 }
+function getCookieValue(name) {
+  var cookies = document.cookie.split("; ");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].split("=");
+    if (cookie[0] === name) {
+      return decodeURIComponent(cookie[1]);
+    }
+  }
+  return "";
+}
+
+// Obtém o valor do cookie "usuario"
+var usuario = getCookieValue("usuario");
+
+// Exibe o valor do usuário no elemento de parágrafo
+document.getElementById("usuarioValor").textContent = usuario;
