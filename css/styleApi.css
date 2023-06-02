@@ -169,7 +169,6 @@ nav .menu ul {
 .lab{
   padding-right: 1rem;
 
-
 }
 
 .button {
@@ -183,16 +182,17 @@ nav .menu ul {
 
   font: 500 1rem var(--body-font);
   transition: background 0.3s;
+  margin-bottom: 7.7rem;
 
 }
 
 /*====  FOOTER ============================ */
 footer {
   background: var(--color-roxo-medio);
-  position: fixed;
+  position:static ;
   bottom: 0;
   width: 100%;
-  padding: 20px;
+  padding: 2.2rem;
 }
 
 footer p{
